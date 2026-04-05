@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myhealthmate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mini_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".scheduleappt"></activity>
+        <activity android:name=".expenselist" />
+        <activity android:name=".expensev" />
+        <activity android:name=".expense" />
+        <activity android:name=".doctoreprofile" />
+        <activity android:name=".connectPatient" />
+        <activity android:name=".connectDoctor" />
+        <activity android:name=".doctor_s_preport" />
+        <activity android:name=".medicationreminderlist" />
+        <activity android:name=".medicationreminder" />
+        <activity android:name=".patient_healthprofile" />
+        <activity android:name=".doctor_dashboard" />
+        <activity android:name=".covidQ" />
+        <activity android:name=".influenzaQ" />
+        <activity android:name=".stressQ" />
+        <activity android:name=".patient_dashboard" />
+        <activity android:name=".patient_data" />
+        <activity android:name=".d_signup" />
+        <activity android:name=".p_signup" />
+        <activity android:name=".doctor_login" />
+        <activity android:name=".patient_login" />
+        <activity android:name=".Profile" />
+        <activity android:name=".view_report" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name=".AlertReceiver" />
+    </application>
+
+</manifest>

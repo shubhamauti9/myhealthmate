@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="170dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        
+        
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ekhart_yoga_image"
+            android:scaleType="centerCrop"
+            android:id="@+id/yoga_image"/>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Ekhart Yoga"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/yoga_image"
+            android:id="@+id/yoga_title"/>
+
+        <TextView
+            android:padding="6dp"
+            android:layout_toRightOf="@+id/yoga_image"
+            android:layout_below="@+id/yoga_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fdjshg kjhd flkjgh fdkug hydgf dgdgd fgfdfk ljgfdlk"
+            android:id="@+id/yoga_description"/>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

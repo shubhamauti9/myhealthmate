@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient_dashboard"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/mini_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mini_logo"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/mini_logo"
+            android:text="Dashboard"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-medium"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffa81e"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logoutbackg"
+            android:id="@+id/logout">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text=""
+            android:textSize="20sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/profile_button"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="sans-serif-medium"
+            android:text="PROFILE"
+            android:textColor="#474242"
+            android:textSize="14sp"
+            app:backgroundTint="#ffa81e" />
+
+        <Button
+            android:id="@+id/report_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="sans-serif-medium"
+            android:text="REPORT"
+            android:textColor="#474242"
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/profile_button"
+            app:backgroundTint="#ffa81e"/>
+
+        <Button
+            android:id="@+id/emergency_button"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/report_button"
+            android:background="@drawable/red_custom_bottton"
+            android:fontFamily="sans-serif-medium"
+            android:text="EMERGENCY"
+            android:textColor="#474242"
+            android:textSize="14sp"
+            app:backgroundTint="#FFFF5151" />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="#ffa81e">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:text="HEALTH ASSESSMENT"
+            android:textColor="#474242"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="#ffe6b8">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="The Content is not intended to be a substitute for professional medical advice, diagnosis, or treatment. "
+            android:textColor="#474242"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+            android:id="@+id/covid19"
+            android:padding="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#d7ff8c"
+            android:elevation="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/covid_image"
+                android:layout_centerInParent="true"></ImageView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Covid-19"
+            android:textAlignment="center"
+            android:textColor="#474242"
+            android:gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/influenza">
+
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#fbb3fc"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/influenza_image"
+                    android:layout_centerInParent="true"></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Influenza"
+                android:textAlignment="center"
+                android:textColor="#474242"
+                android:gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:id="@+id/stress">
+
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#b8fffb"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/stress_image"
+                    android:layout_centerInParent="true"></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stress"
+                android:textAlignment="center"
+                android:textColor="#474242"
+                android:gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="#ffa81e">
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_button"
+                android:elevation="8dp"
+                android:id="@+id/healthprofile_btn"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/biceps_image"
+                    android:layout_centerInParent="true"
+
+                   ></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Health Profile"
+                android:textAlignment="center"
+                android:textColor="#474242" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:id="@+id/connectDoc">
+
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_button"
+                android:elevation="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/doctor"
+                    android:layout_centerInParent="true"></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Connect Doctor"
+                android:textAlignment="center"
+                android:textColor="#474242"
+                android:gravity="center_horizontal"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <RelativeLayout
+                android:layout_marginLeft="11dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_button"
+                android:elevation="8dp"
+                android:id="@+id/checkappt">
+
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/appointment_image"
+                    android:layout_centerInParent="true"></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Request Appointment"
+                android:textAlignment="center"
+                android:textColor="#474242" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="7.5dp"
+                android:background="@drawable/custom_button"
+                android:elevation="8dp"
+                android:id="@+id/expnse">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/report_image"
+                    android:layout_centerInParent="true"></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Expenditure Report"
+                android:textAlignment="center"
+                android:textColor="#474242" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="#ffa81e">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:text="YOGA RECOMMENDED FOR YOU"
+            android:textColor="#474242"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:background="#fffec4">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/yoga_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

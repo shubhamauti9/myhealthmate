@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">myHealthMate</string>
+    <string name="influenza">Influenza</string>
+    <string name="intro1">Please click the check box if you are experiencing any of the following symptoms:</string>
+    <string name="test">test</string>
+    <string name="runnynose">Runny Nose</string>
+    <string name="cough">Cough</string>
+    <string name="myalgia">Myalgia (Muscle Pain)</string>
+    <string name="headache">Headache</string>
+    <string name="throatache">Throat-ache</string>
+    <string name="fatigue">Fatigue</string>
+    <string name="vomitting">Vomitting</string>
+    <string name="fever">Fever</string>
+    <string name="medicalcond">Any Medical Condition?</string>
+    <string name="submit">Submit</string>
+    <string name="covid">Covid-19</string>
+    <string name="dry_cough">Dry Cough</string>
+    <string name="sore_throat">Sore Throat</string>
+    <string name="breathing_problem">Breathing Problem</string>
+    <string name="chronic_lung_disease">Chronic Lung Disease</string>
+    <string name="any_heart_disease">Any Heart Disease</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="hypertension">Hypertension</string>
+    <string name="any_kind_of_stomach_ache">Any kind of Stomach-Ache</string>
+    <string name="travelled_abroad">Travelled Abroad</string>
+    <string name="contacted_covid_patient">Contacted Covid Positive Patient</string>
+    <string name="attended_any_large_gathering">Attended any Large Gathering</string>
+    <string name="visited_public_places">Visited Public Places</string>
+    <string name="family_member_contact_traced">Family working in Public Places</string>
+    <string name="report">Report</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="result">Result:</string>
+    <string name="answer_the_following_questions">Select the appropriate options:</string>
+    <string-array name="bloodgroup">
+        <item>Select the Blood Group</item>
+        <item>Blood Group A+</item>
+        <item>Blood Group B+</item>
+        <item>Blood Group O+</item>
+        <item>Blood Group AB+</item>
+        <item>Blood Group A-</item>
+        <item>Blood Group B-</item>
+        <item>Blood Group O-</item>
+        <item>Blood Group AB-</item>
+    </string-array>
+
+
+    <string name="my_report">My Report</string>
+    <string name="recent_reports">Recent Reports</string>
+    <string name="no_recent_reports">No Recent Reports</string>
+</resources>

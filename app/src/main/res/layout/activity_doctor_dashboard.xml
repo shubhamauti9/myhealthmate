@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient_dashboard"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/mini_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mini_logo"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/mini_logo"
+            android:text="Dashboard"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-medium"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffa81e"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logoutbackg"
+            android:id="@+id/doclogout">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/Dr._text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Dr."
+            android:textSize="20sp"
+            android:layout_marginTop="1dp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/dname_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/Dr._text"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="XYZ"
+            android:textSize="20sp"
+            android:layout_marginTop="1dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/d_username"
+            android:layout_below="@id/dname_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"
+            android:text="Username:"
+            />
+
+        <TextView
+            android:id="@+id/duname_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dname_text"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/d_username"
+            android:text="xzy01"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/d_username"
+            android:id="@+id/profile_button"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="sans-serif-medium"
+            android:text="EDIT PROFILE"
+            android:textColor="#474242"
+            android:textSize="12sp"
+            app:backgroundTint="#ffa81e" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/doc"
+            android:layout_alignParentRight="true"></ImageView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="#ffa81e">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:text="MY PATIENTS"
+            android:textColor="#474242"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="40dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:id="@+id/connectPatient">
+
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#ffb0ff"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/multiple_patients"
+                    android:layout_centerInParent="true"></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Connect Patient"
+                android:textAlignment="center"
+                android:textColor="#474242" />
+
+
+        </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_marginLeft="15dp">-->
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="60dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:background="#ffb0ff"-->
+<!--                android:elevation="8dp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:src="@drawable/multiple_patients"-->
+<!--                    android:layout_centerInParent="true"></ImageView>-->
+
+
+<!--            </RelativeLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:text="Patients' List"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="#474242" />-->
+
+
+<!--        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/pdreport"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#99ffd5"
+                android:elevation="8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/patient_report"
+                    android:layout_centerInParent="true"></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Patient's
+                Report"
+                android:textAlignment="center"
+                android:textColor="#474242" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:id="@+id/sappt">
+
+
+            <RelativeLayout
+                android:layout_marginLeft="11dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#faff99"
+                android:elevation="8dp">
+
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/appointment_image"
+                    android:layout_centerInParent="true"></ImageView>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="82dp"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:text="Schedule an Appointment"
+                android:textAlignment="center"
+                android:textColor="#474242" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="5dp"-->
+<!--        android:background="#ffa81e">-->
+
+<!--        <TextView-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:text="NOTIFICATIONS"-->
+<!--            android:textColor="#474242"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+
+
+<!--    </RelativeLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="5dp"-->
+<!--        android:background="#f8ffb8"-->
+<!--        android:layout_marginTop="10dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="User: Ram Kumar has added you as his trusted doctor. Tap on the patients list to see more of his details."-->
+<!--            android:textSize="15sp"-->
+<!--            android:textColor="#000"/>-->
+
+
+
+<!--    </LinearLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="5dp"-->
+<!--        android:background="#f8ffb8"-->
+<!--        android:layout_marginTop="10dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="User: Pranav Singh raised an Emergency Alert. "-->
+<!--            android:textSize="15sp"-->
+<!--            android:textColor="#000"/>-->
+
+
+
+<!--    </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+</LinearLayout>
